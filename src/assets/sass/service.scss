@@ -1,0 +1,44 @@
+#services {
+    // background-color: #ca8b88;
+    // color: #eee;
+}
+
+.service {
+    display: flex;
+    padding: 40px 5%;
+
+    img {
+        width: 50%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .service__desc {
+        padding-left: 10px;
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .service:nth-child(odd) {
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+    .service:nth-child(even) {
+        flex-direction: column-reverse;
+        img {
+            width: 100%;
+        }
+    }
+}

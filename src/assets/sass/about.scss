@@ -1,0 +1,50 @@
+.about {
+    margin: 5rem;
+
+    .about__section {
+        display: flex;
+        
+        img {
+            height: 50vh;
+        }
+
+        .about__desc {
+            padding: 0 5rem;
+
+            p {
+                padding-left: 1rem;
+            }
+
+            .contact {
+                margin-top: 2rem;
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 5px;
+                }
+
+                form {
+                    input, textarea {
+                        display: block;
+                        margin-bottom: 1rem;
+                        border: 1px solid #666;
+                    }
+
+                    input {
+                        height: 2.5rem;
+                        width: 250px;
+                    }
+
+                    input[name="subject"] {
+                        width: 350px;
+                    }
+
+                    input[type="submit"] {
+                        cursor: pointer;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

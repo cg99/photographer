@@ -1,0 +1,36 @@
+/*photo grid*/
+.prow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2px;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.pcolumn {
+    img {
+        width: 100%;
+        margin-top: 4px;
+        vertical-align: middle;
+    }
+    flex: 1;
+    max-width: 30%;
+    padding: 0 2px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .pcolumn {
+        flex: 40%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .pcolumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
