@@ -17,8 +17,6 @@ const Header = () => {
     useEffect(()=> {
         const images = document.querySelectorAll(".header__image");
 
-        console.log(count);
-
         images.forEach((image, idx) => {
             if (idx === count) {
                 image.style.display = 'block';

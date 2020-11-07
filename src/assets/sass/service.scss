@@ -11,6 +11,7 @@
         width: 50%;
         height: 50vh;
         object-fit: cover;
+        box-shadow: inset 0 2px 0px #dcffa6, 0 2px 5px #000;
     }
 
     .service__desc {
@@ -26,6 +27,15 @@
     }
 }
 
+.service:nth-child(odd) {
+    flex-direction: row-reverse;
+    padding: 40px 5%;
+
+    .service__desc {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

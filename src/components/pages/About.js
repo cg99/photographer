@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../../assets/sass/about.scss';
 
 function About() {
+    const [formData, setFormData] = useState({})
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formData)
+    }
+
+    const handleChange = (e) => {
+        formData[e.target.name] = e.target.value;
+        setFormData(formData)
+    }
+
     return (
         <div className="page">
             <div className="about">
@@ -27,12 +39,12 @@ function About() {
 
                         <div className="contact">
                             <h3>Send Message</h3>
-                            <form action="">
-                                <input type="text" name="email" placeholder="Your Email" />
-                                <input type="text" name="name" placeholder="Your Name" />
-                                <input type="text" name="subject" placeholder="Subject" />
-                                <textarea name="message" id="" cols="60" rows="10" placeholder="Message"></textarea>
-                                <input type="submit" />
+                            <form onSubmit={handleSubmit}>
+                                <input type="text" name="email" placeholder="Your Email" onChange={handleChange}/>
+                                <input type="text" name="name" placeholder="Your Name" onChange={handleChange}/>
+                                <input type="text" name="subject" placeholder="Subject" onChange={handleChange}/>
+                                <textarea name="message" id="" cols="60" rows="10" placeholder="Message" onChange={handleChange} />
+                                <input type="submit"/>
                             </form>
                         </div>
                     </div>
