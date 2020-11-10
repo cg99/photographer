@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Lightbox from "react-awesome-lightbox";
-import "react-awesome-lightbox/build/style.css";
 
 
 function Works() {
@@ -91,7 +90,7 @@ function Works() {
     }
 
     return (
-        <div id="works">
+        <div className="page">
 
             <section>
                 <h3 className="heading">Works</h3>
@@ -102,16 +101,16 @@ function Works() {
                             setCurrentLB(idx)
                         }} alt="" />
 
-                        {currentLB === idx && <Lightbox images={work.images}
-                            onClose={closeLightbox}
-                        />}
-
                         <div className="service__desc">
                             <h3>{work.title}</h3>
                             <p>{work.desc}</p>
                         </div>
                     </div>
                 ))}
+
+                {currentLB !== -1 && <Lightbox images={works[currentLB].images}
+                    onClose={closeLightbox}
+                />}
 
             </section>
 

@@ -1,7 +1,7 @@
 header {
   .header__container {
     .header__image {
-      display: none;
+      // display: none;
       figure {
         img {
           object-fit: cover;
@@ -47,6 +47,7 @@ nav {
   justify-content: space-around;
   padding: 20px 0;
   background-color: #fff;
+  // border-bottom: 1px solid #cecece;
 
   .logo {
     img {
@@ -68,4 +69,24 @@ nav {
     border-bottom: 2px solid #333;
     color: #333;
   }
+}
+
+
+// transition of the slider images
+.slide-enter {
+  opacity: 0.01;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.slide-leave {
+  opacity: 1;
+}
+
+.slide-leave.slide-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-out;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Works from './section/Works.js';
+import Gallery from './section/Gallery.js';
 import Services from './section/Services.js';
 import Video from './section/Video.js'
 
@@ -46,9 +46,9 @@ const Main = () => {
   return (
     <div>
 
-      <main>
+      <main className="page">
 
-        <Works />
+        <Gallery />
 
         <Services heading="Services" services={services}/>
 
