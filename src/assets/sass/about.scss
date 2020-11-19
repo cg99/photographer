@@ -3,7 +3,7 @@
 
     .about__section {
         display: flex;
-        
+
         img {
             height: 50vh;
         }
@@ -23,7 +23,8 @@
                 }
 
                 form {
-                    input, textarea {
+                    input,
+                    textarea {
                         display: block;
                         margin-bottom: 1rem;
                         border: 1px solid #666;
@@ -44,6 +45,28 @@
                         font-size: 1.2rem;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about {
+        margin: 2rem;
+        
+        .about__section {
+            flex-direction: column;
+
+            figure {
+                text-align: center;
+
+                figcaption {
+                    font-style: italic;
+                }
+            }
+
+            .about__desc {
+                padding: 10px 0;
             }
         }
     }

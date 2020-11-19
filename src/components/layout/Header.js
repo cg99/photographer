@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import Navbar from './Navbar.js';
-import { MdChangeHistory } from 'react-icons/md';
+import { RiArrowLeftSLine, RiArrowRightSLine, 
+    RiCheckboxBlankCircleLine, RiCheckboxBlankCircleFill } from 'react-icons/ri'
 import '../../assets/sass/header.scss';
 
 
@@ -12,16 +13,37 @@ const Header = () => {
     const location = useLocation();
     const path = location.pathname;
 
-    const sliderImages = ['./img/header.jpg', './img/gallery/3.jpg', './img/gallery/g2.jpg'];
+    const sliderImages = ['./img/header1.jpg', './img/header2.jpg', './img/header3.jpg'];
+    const numOfImages = sliderImages.length - 1;
+
+    const markers = [];
+
+    for (let i = 0; i <= numOfImages; i++) {
+        if (i === imageId) {
+            markers.push(<RiCheckboxBlankCircleFill />)
+        } else {
+            markers.push(<RiCheckboxBlankCircleLine />)
+        }
+    }
 
     useEffect(() => {
-        resetImageId()
+        reset();
     })
 
-    const resetImageId = () => {
-        if (imageId > 2) {
-            setImageId(0)
+    const reset = () => {
+        if (imageId > numOfImages) {
+            setImageId(0);
+        } else if (imageId < 0) {
+            setImageId(numOfImages);
         }
+    }
+
+    const goForward = () => {
+        setImageId(imageId - 1)
+    }
+
+    const goBackward = () => {
+        setImageId(imageId + 1)
     }
 
     return (
@@ -40,7 +62,12 @@ const Header = () => {
                         </ReactCSSTransitionGroup>
                     </div>
 
-                    <button onClick={() => setImageId(imageId + 1)}><MdChangeHistory /></button>
+                    <button className="btn__left_arrow" onClick={goForward}><RiArrowLeftSLine /></button>
+                    <button className="btn__right_arrow" onClick={goBackward}><RiArrowRightSLine /></button>
+
+                    <div className="markers">
+                        {markers}
+                    </div>
 
                 </div>
             }

@@ -18,8 +18,7 @@ header {
       border-radius: 30px;
       width: 40px;
       height: 40px;
-      top: 90%;
-      left: calc(50% - 40px);
+      top: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,7 +26,6 @@ header {
       svg {
         font-size: 2.5rem;
         position: absolute;
-        padding: 0px 4px 4px;
       }
     }
 
@@ -63,6 +61,8 @@ nav {
     color: #222;
     font-size: 1.2rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
   }
 
   a:hover {
@@ -70,7 +70,6 @@ nav {
     color: #333;
   }
 }
-
 
 // transition of the slider images
 .slide-enter {
@@ -89,4 +88,42 @@ nav {
 .slide-leave.slide-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-out;
+}
+
+// arrow buttons
+.btn__left_arrow {
+  left: 50px;
+}
+
+.btn__right_arrow {
+  right: 50px;
+}
+
+.markers {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(50% - 40px);
+}
+
+@media screen and (max-width: 360px) {
+  nav .logo {
+    width: 50vw;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .btn__left_arrow {
+    left: 25px;
+  }
+  
+  .btn__right_arrow {
+    right: 25px;
+  }
 }

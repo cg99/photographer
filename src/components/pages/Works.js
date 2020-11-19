@@ -96,12 +96,12 @@ function Works() {
                 <h3 className="heading">Works</h3>
 
                 {works.map((work, idx) => (
-                    <div className="service" key={idx}>
+                    <div className="work" key={idx}>
                         <img src={work.image} onClick={() => {
                             setCurrentLB(idx)
                         }} alt="" />
 
-                        <div className="service__desc">
+                        <div className="work__desc">
                             <h3>{work.title}</h3>
                             <p>{work.desc}</p>
                         </div>
