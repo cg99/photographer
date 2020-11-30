@@ -13,7 +13,7 @@ const Header = () => {
     const location = useLocation();
     const path = location.pathname;
 
-    const sliderImages = ['./img/header1.jpg', './img/header2.jpg', './img/header3.jpg'];
+    const sliderImages = ['./img/header/header1.jpg', './img/header/header2.jpg', './img/header/header3.jpg'];
     const numOfImages = sliderImages.length - 1;
 
     const markers = [];

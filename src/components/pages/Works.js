@@ -14,18 +14,18 @@ function Works() {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
             qui officia deserunt mollit anim id est laborum.`,
-            image: "https://source.unsplash.com/user/eyoelkahssay/1600x900",
+            image: "./img/works/work-a-1.jpg",
             images: [
                 {
-                    url: "https://source.unsplash.com/collection/190727/1600x900",
+                    url: "./img/works/work-a-1.jpg",
                     title: "image title 1"
                 },
                 {
-                    url: "https://source.unsplash.com/user/eyoelkahssay/1600x900",
+                    url: "./img/works/work-a-2.jpg",
                     title: "image title 2"
                 },
                 {
-                    url: "https://source.unsplash.com/random/1600x900",
+                    url: "./img/works/work-a-3.jpg",
                     title: "image title 3"
                 }
             ]
@@ -43,18 +43,18 @@ function Works() {
             laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
             iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
             consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?`,
-            image: "https://source.unsplash.com/user/northwoodn/1600x900",
+            image: "./img/works/work-b-1.jpg",
             images: [
                 {
-                    url: "https://source.unsplash.com/collection/190727/1600x900",
+                    url: "./img/works/work-b-1.jpg",
                     title: "image title 1"
                 },
                 {
-                    url: "https://source.unsplash.com/user/northwoodn/1600x900",
+                    url: "./img/works/work-b-2.jpg",
                     title: "image title 2"
                 },
                 {
-                    url: "https://source.unsplash.com/random/1600x900",
+                    url: "./img/works/work-b-3.jpg",
                     title: "image title 3"
                 }
             ]
@@ -67,18 +67,18 @@ function Works() {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
             qui officia deserunt mollit anim id est laborum.`,
-            image: "https://source.unsplash.com/user/lefrancois/1600x900",
+            image: "./img/works/work-c-1.jpg",
             images: [
                 {
-                    url: "https://source.unsplash.com/collection/190727/1600x900",
+                    url: "./img/works/work-c-1.jpg",
                     title: "image title 1"
                 },
                 {
-                    url: "https://source.unsplash.com/user/lefrancois/1600x900",
+                    url: "./img/works/work-c-2.jpg",
                     title: "image title 2"
                 },
                 {
-                    url: "https://source.unsplash.com/random/1600x900",
+                    url: "./img/works/work-c-3.jpg",
                     title: "image title 3"
                 }
             ]
@@ -99,7 +99,7 @@ function Works() {
                     <div className="work" key={idx}>
                         <img src={work.image} onClick={() => {
                             setCurrentLB(idx)
-                        }} alt="" />
+                        }} alt="" loading="lazy"/>
 
                         <div className="work__desc">
                             <h3>{work.title}</h3>

@@ -8,7 +8,7 @@ const Video = () => {
 
       <section>
         {/* <h3 className="heading">Videography</h3> */}
-        <iframe title="Video Showcase" src="https://www.youtube.com/embed/2GkqNHddLjw"></iframe>
+        <iframe title="Video Showcase" src="https://www.youtube.com/embed/2GkqNHddLjw" loading="lazy"></iframe>
       </section>
 
     </div>

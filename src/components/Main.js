@@ -14,7 +14,7 @@ const Main = () => {
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
         qui officia deserunt mollit anim id est laborum.`,
-      image: "./img/gallery/s2.jpg"
+      image: "./img/showcase/show1.jpg"
     },
     {
       title: "Fashion",
@@ -29,7 +29,7 @@ const Main = () => {
         laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
         iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
         consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?`,
-      image: "./img/gallery/s1.jpg"
+      image: "./img/showcase/show2.jpg"
     },
     {
       title: "Events",
@@ -39,7 +39,7 @@ const Main = () => {
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
         qui officia deserunt mollit anim id est laborum.`,
-      image: "./img/gallery/s3.jpg"
+      image: "./img/showcase/show3.jpg"
     }
   ];
 

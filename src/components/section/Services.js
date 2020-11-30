@@ -15,7 +15,7 @@ const Services = (props) => {
 
                 {services.map((service, idx) => (
                     <div className="service" key={idx}>
-                        <img src={service.image} alt="" />
+                        <img src={service.image} alt="" loading="lazy"/>
                         <div className="service__desc">
                             <h3>{service.title}</h3>
                             <p>{service.desc}</p>

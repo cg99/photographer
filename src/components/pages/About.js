@@ -21,9 +21,9 @@ function About() {
                 <div className="heading">About</div>
                 <div className="about__section">
                     <figure>
-                        <img src="./img/gallery/1.png" alt="" />
+                        <img src="./img/me.jpg" alt="" loading="lazy"/>
                         <figcaption>
-                            "Be what you want to be. Do what you want to do."
+                            "Capture The Precious Moments"
                         </figcaption>
                     </figure>
 
@@ -36,8 +36,8 @@ function About() {
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                             qui officia deserunt mollit anim id est laborum."
                         </div>
-                        <div style={{marginTop: '10px'}}>
-                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                        <div style={{ marginTop: '10px' }}>
+                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                             ut aliquip ex ea commodo consequat.
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -57,6 +57,10 @@ function About() {
                                 <textarea name="message" id="" cols="60" rows="10" placeholder="Message" onChange={handleChange} />
                                 <input type="submit"/>
                             </form> */}
+                            <br/>
+                            <div>
+                                <span>Photo by <a href="https://unsplash.com/@romandempire?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Roman Denisenko</a> on <a href="https://unsplash.com/@romandempire?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>

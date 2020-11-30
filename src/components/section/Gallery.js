@@ -7,10 +7,10 @@ import "react-awesome-lightbox/build/style.css";
 const Gallery = () => {
   let [currentImage, setCurrentImage] = useState(-1);
 
-  const galleryPath = './img/gallery';
-  const photos = [`${galleryPath}/g1.jpg`, `${galleryPath}/g2.jpg`, `${galleryPath}/3.jpg`,
-  `${galleryPath}/2.jpg`, `${galleryPath}/g5.jpg`, `${galleryPath}/g6.jpg`,
-  `${galleryPath}/g3.jpg`, `${galleryPath}/1.png`, `${galleryPath}/4.jpg`];
+  const imagePath = './img/collection';
+  const photos = [`${imagePath}/img1-min.jpg`, `${imagePath}/img2-min.jpg`, `${imagePath}/img3-min.jpg`,
+  `${imagePath}/img4-min.jpg`, `${imagePath}/img5-min.jpg`, `${imagePath}/img6-min.jpg`,
+  `${imagePath}/img7-min.jpg`, `${imagePath}/img8-min.jpg`, `${imagePath}/img9-min.jpg`];
 
   const closeLightbox = () => {
     setCurrentImage(-1)
@@ -29,7 +29,7 @@ const Gallery = () => {
                 <img className="thumbnail" key={j} src={photos[3 * i + j]}
                   onClick={() => {
                     setCurrentImage(3 * i + j)
-                  }} alt="gal title" />
+                  }} alt="gal title" loading="lazy"/>
               ))}
             </div>
           ))}
